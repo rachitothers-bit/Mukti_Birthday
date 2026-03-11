@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Space Saving Design (Mukti)</title>
+
+<style>
+
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);
+color:white;
+overflow-x:hidden;
+}
+
+section{
+padding:80px 20px;
+text-align:center;
+animation:fadeIn 1.8s ease-in-out;
+}
+
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(30px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+h1{
+font-size:48px;
+color:#66d9ff;
+text-shadow:0 0 20px rgba(102,217,255,0.6);
+}
+
+h2{
+font-size:26px;
+margin-top:10px;
+color:#a0e9ff;
+}
+
+p{
+max-width:850px;
+margin:20px auto;
+font-size:19px;
+line-height:1.8;
+color:#e6f7ff;
+}
+
+.highlight{
+color:#66d9ff;
+font-weight:bold;
+}
+
+/* NEW GALLERY DESIGN */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+max-width:1100px;
+margin:60px auto;
+padding:0 20px;
+}
+
+.gallery img,
+.gallery video{
+width:100%;
+height:350px;
+object-fit:cover;
+border-radius:18px;
+transition:0.35s;
+box-shadow:0 8px 25px rgba(0,0,0,0.4);
+}
+
+.gallery img:hover,
+.gallery video:hover{
+transform:translateY(-10px) scale(1.03);
+box-shadow:0 15px 40px rgba(102,217,255,0.5);
+}
+
+.footer{
+padding:50px 20px;
+background:#0a192f;
+font-size:17px;
+color:#ccc;
+margin-top:40px;
+}
+
+/* floating sparkles */
+
+.spark{
+position:fixed;
+bottom:-20px;
+font-size:18px;
+animation:float 7s linear infinite;
+}
+
+@keyframes float{
+from{transform:translateY(0);opacity:1;}
+to{transform:translateY(-100vh);opacity:0;}
+}
+
+</style>
+</head>
+
+<body>
+
+<section>
+
+<h1>Happy Birthday, <span class="highlight">Space Saving Design (Mukti)</span> 🎉</h1>
+<h2>Another Year. Another Level.</h2>
+
+<p>
+Mukti, birthdays are not just about growing older —
+they’re about growing wiser, stronger, and more confident
+with every year that passes.
+</p>
+
+<p>
+As a friend, I just want to say this —
+you have a calm strength about you.
+You handle things in your own way,
+and you don’t need to be loud to stand out.
+</p>
+
+<p>
+I hope this year gives you new experiences,
+unexpected happiness,
+and plenty of moments that make you laugh for real.
+</p>
+
+<p>
+Keep chasing what excites you.
+Keep trusting your decisions.
+And keep moving forward — at your own pace.
+</p>
+
+<p>
+Have a genuinely great birthday, Mukti.
+You deserve a good one.
+</p>
+
+</section>
+
+<section>
+
+<h2>Some Good Memories ✨</h2>
+
+<div class="gallery">
+
+<img src="1.jpeg">
+<img src="2.jpeg">
+<img src="3.jpeg">
+
+<video autoplay muted loop>
+<source src="4.mp4" type="video/mp4">
+</video>
+
+<img src="5.jpeg">
+
+<video autoplay muted loop>
+<source src="6.mp4" type="video/mp4">
+</video>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>One Small Reminder</h2>
+
+<p>
+Stay confident in who you are.
+Stay curious about what’s ahead.
+And keep doing things that make you happy.
+</p>
+
+</section>
+
+<div class="footer">
+Made. With effort. 🌟
+</div>
+
+<script>
+for(let i=0;i<30;i++){
+let spark=document.createElement("div");
+spark.className="spark";
+spark.innerHTML="✨";
+spark.style.left=Math.random()*100+"vw";
+spark.style.animationDuration=(Math.random()*4+4)+"s";
+document.body.appendChild(spark);
+}
+</script>
+
+</body>
+</html>
